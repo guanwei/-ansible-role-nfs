@@ -22,12 +22,12 @@
   register: exports_file
   become: true
 
-- name: Reload nfs
+- name: Reload NFS
   command: exportfs -ra
   when: exports_file.changed
   become: true
 
-- name: Ensure nfs is running
+- name: Ensure NFS is running
   service:
     name: "{{ nfs_server_daemon }}"
     state: started
