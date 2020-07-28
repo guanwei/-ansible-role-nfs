@@ -1,1 +1,14 @@
 ---
+- name: Ensure NFS utilities are installed
+  yum:
+    name: nfs-utils
+    update_cache: true
+    state: present
+  become: true
+
+- name: Ensure rpcbind is running
+  service:
+    name: rpcbind
+    state: started
+    enabled: true
+  become: true
