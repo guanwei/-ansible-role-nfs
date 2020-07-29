@@ -28,7 +28,7 @@ None.
 requirements.yml
 ```
 - name: nfs
-  src: https://github.com/guanwei/ansible-role-nfs.git
+  src: ssh://tfsemea1.ta.philips.com:22/tfs/TPC_Region27/CDI_PT/_git/ansible-role-nfs
   version: dev
   scm: git
 ```
