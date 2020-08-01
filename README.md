@@ -28,8 +28,8 @@ None.
 requirements.yml
 ```
 - name: nfs
-  src: ssh://tfsemea1.ta.philips.com:22/tfs/TPC_Region27/CDI_PT/_git/ansible-role-nfs
-  version: dev
+  src: <repo_url>
+  version: <branch_name>
   scm: git
 ```
 
